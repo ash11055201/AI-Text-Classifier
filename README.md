@@ -99,6 +99,8 @@ Open the URL Gradio prints, paste text, and view prediction, confidence, and exp
 
 ## Hugging Face Spaces
 
+**Live demo:** [https://huggingface.co/spaces/Vikrant0701/ai-text-classifier](https://huggingface.co/spaces/Vikrant0701/ai-text-classifier)
+
 1. **SDK** — Create a **Gradio** Space; set the app file to **`app.py`** (default when `app.py` exists at the repo root).
 2. **Dependencies** — Spaces installs from **`requirements.txt`** at the repo root. Keep it in sync with imports in `app.py` / `src/inference.py`.
 3. **Weights** — The app loads **`saved_model/model.pt`** relative to the repo root. Your local `.gitignore` ignores `saved_model/`; for Spaces you still need that file **in the Space repo**, for example:
