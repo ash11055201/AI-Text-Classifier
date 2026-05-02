@@ -1,0 +1,13 @@
+# Hugging Face Spaces (CPU) — use PyTorch CPU wheels; omit this line if you install CUDA torch locally.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch>=2.1.0,<3
+transformers>=4.36.0
+safetensors>=0.4.0
+gradio>=4.0.0
+groq>=0.4.0
+pydantic>=2.0.0
+
+# Optional: only if you run the FastAPI server (uvicorn api.main:app) on the same env
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0

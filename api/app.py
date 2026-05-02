@@ -1,18 +1,26 @@
+import sys
+from pathlib import Path
 
 import gradio as gr
-import requests
 
-API_URL = 'http://localhost:8000/predict'
+_ROOT = Path(__file__).resolve().parent.parent
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
+from src.inference import load_classifier, predict_payload
+
+load_classifier()
+
 
 def classify_text(text):
     if not text.strip():
-        return 'Please enter some text', 0.0, ''
-    response = requests.post(API_URL, json={'text': text})
-    if response.status_code != 200:
-        return 'Error calling API', 0.0, ''
-    data = response.json()
+        return 'Please enter some text', '', ''
+    try:
+        data = predict_payload(text)
+    except Exception:
+        return 'Error', '', 'Classification failed.'
     label = data['label'].upper()
-    conf  = f"{data['confidence']:.1%}"
+    conf = f"{data['confidence']:.1%}"
     explanation = data['explanation']
     return label, conf, explanation
 
@@ -33,4 +41,5 @@ demo = gr.Interface(
     ]
 )
 
-demo.launch()
+if __name__ == '__main__':
+    demo.launch()
