@@ -1,0 +1,17 @@
+{"time":"2026-04-26T13:00:30.0421089+10:00","level":"INFO","msg":"wandb-core"}
+{"time":"2026-04-26T13:00:30.0421089+10:00","level":"INFO","msg":"stream: starting","core version":"0.26.1"}
+{"time":"2026-04-26T13:00:30.8335353+10:00","level":"INFO","msg":"stream: created new stream","id":"dqyr198z"}
+{"time":"2026-04-26T13:00:30.8335353+10:00","level":"INFO","msg":"handler: started"}
+{"time":"2026-04-26T13:00:30.8352147+10:00","level":"INFO","msg":"stream: started"}
+{"time":"2026-04-26T13:00:30.8352147+10:00","level":"INFO","msg":"writer: started","stream_id":"dqyr198z"}
+{"time":"2026-04-26T13:00:30.8358014+10:00","level":"INFO","msg":"sender: started"}
+{"time":"2026-04-26T13:00:31.2235199+10:00","level":"ERROR","msg":"api: HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-04-26T13:00:31.2253241+10:00","level":"ERROR","msg":"runupserter: failed to init run","error":"returned error 404: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"entity ashushahane07 not found during upsertBucket\",\"path\":[\"upsertBucket\"]}]}"}
+{"time":"2026-04-26T13:00:31.2362758+10:00","level":"ERROR","msg":"sender: uploadConfigFile: runhandle: run not yet initialized"}
+{"time":"2026-04-26T13:00:31.2367151+10:00","level":"ERROR","msg":"runfiles: runhandle: run not yet initialized"}
+{"time":"2026-04-26T13:00:31.2371571+10:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-04-26T13:00:31.2371571+10:00","level":"INFO","msg":"stream: finishing up"}
+{"time":"2026-04-26T13:00:31.2371571+10:00","level":"INFO","msg":"handler: closed"}
+{"time":"2026-04-26T13:00:31.2371571+10:00","level":"INFO","msg":"sender: closed"}
+{"time":"2026-04-26T13:00:31.2371571+10:00","level":"INFO","msg":"stream: all finished"}
+{"time":"2026-04-26T13:00:31.237518+10:00","level":"ERROR","msg":"stream: runURL: runhandle: run not yet initialized"}

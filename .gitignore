@@ -1,0 +1,5 @@
+saved_model/
+venv/
+
+# Local secrets — replace placeholder in .env with your real key
+.env

@@ -1,0 +1,13 @@
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_setup.py:_flush():81] Configure stats pid to 35800
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_init.py:setup_run_log_directory():723] Logging user logs to E:\Projects\AI Text Classifier\wandb\run-20260426_125847-oj1ucvdj\logs\debug.log
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to E:\Projects\AI Text Classifier\wandb\run-20260426_125847-oj1ucvdj\logs\debug-internal.log
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_init.py:init():850] calling init triggers
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-04-26 12:58:47,220 INFO    MainThread:35800 [wandb_init.py:init():898] starting backend
+2026-04-26 12:58:49,635 INFO    MainThread:35800 [wandb_init.py:init():913] sending inform_init request
+2026-04-26 12:58:51,192 INFO    MainThread:35800 [wandb_init.py:init():918] backend started and connected
+2026-04-26 12:58:51,193 INFO    MainThread:35800 [wandb_init.py:init():988] updated telemetry
+2026-04-26 12:58:51,194 INFO    MainThread:35800 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
